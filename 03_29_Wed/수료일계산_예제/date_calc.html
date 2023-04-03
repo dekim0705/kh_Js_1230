@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수료일 계산</title>
+    <style>
+        /* body {
+            margin: 0;
+        }
+        .container {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;   좌우 중간정렬
+            border: 2px solid #fada;            
+            border-radius: 50%;
+            background-color: #fadada;
+            text-align: center;
+            padding: 10px;
+        }
+        h3{
+            margin-top: 80px;
+        }
+        .btn {
+            border-radius: 50px;
+            border: 1px solid #fada;
+            background-color: #b3a3a3;
+            width: 4rem;
+            height: 2rem;
+        }
+
+        #leftTime {
+            font-size: 1em;
+        }
+        #leftTime > span {
+            text-decoration: underline;
+            font-weight: bolder;
+        } */
+        #container{
+            margin:50px auto;
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            border:2px double #222;
+            background-color:#d8f0fc;
+            text-align: center;
+        }
+        h1 {
+            margin-top:80px;
+        }
+        .accent {
+            font-size:1.8em;
+            font-weight:bold;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- <div class="container">
+            <h3>수료일까지 얼마나 남았을까요?</h3>
+            <button onclick="getLeftTime()" class="btn">✿˘◡˘✿</button>
+            <p id="leftTime"></p>
+    </div >
+    <script src="date_calc.js"></script> -->
+    <div id="container">
+        <h1>학원 수료</h1>
+        <p><span class="accent" id="result"></span>일 남았습니다. 힘내세요!!!!!</p>
+        <p>화이팅!</p>
+        <p>흑흑 ㅠㅠㅠ</p>
+    </div>  
+    <script src="date_calc.js"></script>
+</body>
+</html>

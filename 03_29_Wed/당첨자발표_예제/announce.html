@@ -1,0 +1,54 @@
+<!-- 응모자 수를 입력 받아 당첨자를 발표 하는 프로그램 작성 -->
+<!-- 응모자 : input 타입으로 입력 -->
+<!-- 당첨자 발표 : 응모자 수 사이에서 당첨자를 선택(랜덤 함수 이용)해 발표 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            color:saddlebrown;
+        }
+        .container {
+            margin: 50px auto;
+            text-align: center;
+            width: 300px;
+            height: 200px;
+            background-image: linear-gradient(rgba(253, 241, 241, 0.3),rgba(249, 242, 242, 0.3)), 
+            url("cherry\ wallpaper.jpg");
+            background-size: cover;
+            border: 1px solid blanchedalmond;
+            border-radius: 50%;
+        }
+        #input1 {
+            width: 50px;
+        }
+        label {
+            font-weight: bold;
+        }
+        p { 
+            font-weight: bold;
+        }
+        span {
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>당첨자 발표</h1>
+        <label for="input1">
+            응모자 수:  
+            <input type="number" id="input1" onchange="getDraw()">
+        </label>
+        <p id="lucky"></p>
+    </div >
+    <script src="announce.js"></script>
+</body>
+</html>
