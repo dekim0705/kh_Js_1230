@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실습예제</title>
+    <style>
+        /* #subList {
+            list-style: none;
+        } */
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div id="container">
+        <h1>DOM 추가/삭제</h1>
+        <p>공부할 과목을 기록해 보세요.</p>
+        <p>공부가 끝난 과목은 클릭해서 삭제할 수 있습니다.</p>
+        <form name="frm">
+            <input type="text" name="subject">
+        </form>
+        <button onclick="addSubject()">추가</button>
+        <ul id ="subList">
+
+        </ul>
+    </div> -->
+    <div id="container">
+        <h1>DOM 추가/삭제</h1>
+        <p>공부할 과목을 기록해 보세요.</p>
+        <p>공부가 끝난 과목은 클릭해서 삭제 할 수 있습니다.</p>
+        <form action="#">
+            <input type="text" id="subject" autofocus>
+            <button onclick="newRegister(); return false;">추가</button>
+        </form>
+        <hr>
+        <ul id="itemList"></ul>
+    </div >
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- form Tag속 button에 원래 기본 이벤트가 있음 : 올리고 나서 화면 초기화
+    지우는 방법 : prevent default, return false-->

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>form 조작</h1>
+    <form action="#" name="frm">
+        <fieldset>
+            <legend>입력 요소(text,password, textarea)</legend>
+            <input type="text" name="id">
+            <input type="password" name="pw">
+            <textarea name="desc"></textarea>
+        </fieldset>
+    </form>
+    <button onclick="inputCall()"">입력 호출</button>
+    <form>
+        <fieldset>
+            <legend>체크박스</legend>
+            <label><input type="checkbox" value="apple">사과</label>
+            <label><input type="checkbox" value="banana">바나나</label>
+            <label><input type="checkbox" value="orange">오렌지</label>
+            <label><input type="checkbox" value="melon">멜론</label>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>라디오박스</legend>
+            <label><input type="radio" name ="fruits" value="apple">사과</label>
+            <label><input type="radio" name ="fruits" value="banana">바나나</label>
+            <label><input type="radio" name ="fruits" value="orange">오렌지</label>
+            <label><input type="radio" name ="fruits" value="melon">멜론</label>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>콤보박스</legend>
+            <select name="opt">
+                <option value="apple">사과</option>
+                <option value="banana">바나나</option>
+                <option value="orange">오렌지</option>
+                <option value="melon">멜론</option>
+            </select>
+        </fieldset>
+    </form>
+    <form name="frm2">
+        <fieldset>
+            <legend>파일 업로드</legend>
+            <input type="file" name="upload">
+        </fieldset>
+    </form>    
+    <button onclick="upload()">파일 업로드</button>
+    <script src="script.js"></script>
+</body>
+</html>
