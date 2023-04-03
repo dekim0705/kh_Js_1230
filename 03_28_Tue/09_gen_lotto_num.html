@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Number</title>
+    <style>
+        /* .intro {
+            text-align: center;
+            height: 100px;
+        }
+        .balls {
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+            border: 1px solid transparent;
+            border-radius: 50px;
+            line-height: 45px;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+        }
+        .ball1 {
+            background-color: red;
+        }
+        .ball2 {
+            background-color: orange;
+        }
+        .ball3 {
+            background-color:cornflowerblue;
+        }
+        .ball4 {
+            background-color: green;
+        }
+        .ball5 {
+            background-color: blue;
+        }
+        .ball6 {
+            background-color: indigo;
+        } */
+        .btn {
+            display: block;  
+            margin: 0 auto;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .btn:active {
+            background-color: #3e8e41;
+        }
+        body {
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #3d3d3d;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .number {
+            height: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: #3d3d3d;
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>    
+    <h1>로또 번호 생성기</h1>
+    <button onclick = "genLotto()" class="btn">✿˘◡˘✿</button>
+    <div class="container"></div>
+    <script src="09_gen_lotto_num.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 번호 생성</title>
+    <style>
+        .btn {
+            display: block;
+            margin: 0 auto;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .btn:active {
+            background-color: #3e8e41;
+        }
+        body {
+			background-color: #f5f5f5;
+			font-family: sans-serif;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			color: #3d3d3d;
+		}
+		#container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 30px;
+		}
+		.number {
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			border-radius: 50%;
+			background-color: #3d3d3d;
+			color: #fff;
+			font-size: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+    </style>
+</head>
+<body>
+    <h1>로또 번호 생성기</h1>
+    <button onclick="genLotto()" class="btn">✿˘◡˘✿</button>
+    <div id="container"></div>
+    <script src="09_gen_lotto_num.js"></script>
+</body>
+</html>
