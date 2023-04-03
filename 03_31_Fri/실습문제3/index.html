@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 300px;
+            height: 300px;  
+            border-radius: 10px;
+        }
+        h1 {    
+            font-size: 1rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+        button {
+            font-size: 0.8rem;
+            background-color: #fff;
+            border: 1px solid gray;
+        }
+        #pic {
+            position: relative;
+        }
+        #open {
+            position: absolute;
+            margin-left: -180px;
+            margin-top: 275px;
+            opacity: 0.8;
+        }
+        #desc {
+            display: none;
+            margin-left: -70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- <div id="pic"> 사진 부분 div나누면 absolute때문에 다시 닫았을 때 
+            버튼 위치가 원래대로 돌아오지 않음ㅠㅠ-->
+            <img src="./muffin.gif" alt="머핀">
+            <button id="open" onclick="showDesc()">상세 설명 보기</button>
+        <!-- </div> -->
+        <div id="desc">
+            <h1>Muffin 입니다.</h1>
+            <p>Muffin이는 너무 귀엽네요!</p>
+            <p>저는 배가 쫌 고픈거같아요..진짜루..</p>
+            <button id="close"onclick="hideDesc()">상세 설명 닫기</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
