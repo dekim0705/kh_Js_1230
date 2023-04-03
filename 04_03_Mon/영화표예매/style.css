@@ -1,0 +1,8 @@
+#seats {
+    display: none;
+    gap: 5px;
+}
+#seats > button {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,19 @@
+.seat {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 40px;
+    background-color: #eee;
+    cursor: pointer;
+}
+.booked {
+    background-color: #f00;
+    cursor: not-allowed;
+}
+.menu {
+    margin-top: 10px;
+}
