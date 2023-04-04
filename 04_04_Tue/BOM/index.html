@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저 객체 모델</title>
+    <style>
+        /* 웹 브라우저에 스크롤바를 생성 시키기 위해 너비와 높잉를 크게 잡음 */
+        /* body {
+            width: 2500px;
+            height: 5000px;
+        } */
+        /* 뷰포트에 버튼을 고정 시킴 */
+        /* button {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+        } */
+        body {
+            width: 5000px;
+            height: 5000px;
+        }
+        .btn1 {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+        .btn2 {
+            position: fixed;
+            top: 10px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button onclick="printInfo()">window 객체 속성 확인</button> -->
+    <!-- <button onclick="popup()">팝업</button> -->
+    <button class="btn1" onclick="sTo()">scrollTo(200,400)</button>
+    <button class="btn2" onclick="sBy()">scrollBy(200,400)</button>
+    <script src="script.js"></script>
+</body>
+</html>
